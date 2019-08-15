@@ -26,7 +26,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10685.600586,46.564682,1726.619019};
+					position[]={10685.644531,46.565178,1726.495117};
 					azimut=-2.553610;
 					id=0;
 					side="CIV";
@@ -79,6 +79,7 @@ class Mission
 				class Item0
 				{
 					position[]={10732.322266,127.979996,3113.616943};
+					synchronizations[]={0};
 					class Effects
 					{
 					};
@@ -91,7 +92,13 @@ class Mission
 					type="GETIN";
 					class Effects
 					{
+						titleType="TEXT";
+						titleEffect="PLAIN DOWN";
+						title="Ya tebya sdelau, pidor werstyanoy";
 					};
+					timeoutMin=5.000000;
+					timeoutMid=5.000000;
+					timeoutMax=5.000000;
 					showWP="NEVER";
 				};
 				class Item2
@@ -100,9 +107,7 @@ class Mission
 					speed="FULL";
 					class Effects
 					{
-						titleType="TEXT";
 						titleEffect="PLAIN DOWN";
-						title="Ya tebya sdelau, pidor werstyanoy";
 					};
 					showWP="NEVER";
 				};
@@ -235,6 +240,7 @@ class Mission
 				titleEffect="PLAIN DOWN";
 				title="Preved, komar, poehali v coworking";
 			};
+			synchronizations[]={0};
 		};
 		class Item3
 		{
