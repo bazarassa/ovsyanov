@@ -1,6 +1,6 @@
 # ovsyanov
 
-OFP:CWC (ArmA:CWA) mission about famous russian programmer Ovsyanov
+OFP:CWC (ArmA:CWA) mission about famous russian programmer Ovsyanov.
 
 ## Installation
 
