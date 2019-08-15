@@ -1,0 +1,419 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"bis_resistance",
+		"Kolo"
+	};
+	addOnsAuto[]=
+	{
+		"bis_resistance",
+		"Kolo"
+	};
+	randomSeed=10852867;
+	class Intel
+	{
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10685.600586,46.564682,1726.619019};
+					azimut=-2.553610;
+					id=0;
+					side="CIV";
+					vehicle="Civilian4";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=1.000000;
+					text="ovsyanov";
+				};
+			};
+		};
+		class Item1
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10651.566406,44.922462,1637.468750};
+					azimut=-35.747692;
+					id=2;
+					side="CIV";
+					vehicle="Civilian";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+		class Item2
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10732.767578,127.979996,3113.281006};
+					id=4;
+					side="CIV";
+					vehicle="Civilian5";
+					leader=1;
+					skill=0.600000;
+					text="komar";
+				};
+			};
+			class Waypoints
+			{
+				items=4;
+				class Item0
+				{
+					position[]={10732.322266,127.979996,3113.616943};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={10730.422852,127.979996,3113.827393};
+					id=5;
+					type="GETIN";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={11142.191406,116.932838,5364.559082};
+					speed="FULL";
+					class Effects
+					{
+						titleType="TEXT";
+						titleEffect="PLAIN DOWN";
+						title="Ya tebya sdelau, pidor werstyanoy";
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={11163.056641,116.915390,5365.113281};
+					expActiv="endride = true";
+					class Effects
+					{
+						titleType="TEXT";
+						titleEffect="PLAIN DOWN";
+						title="komar: Oooh, sooqua, kolenee bolyat";
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=3;
+		class Item0
+		{
+			position[]={10663.981445,44.596676,1643.310425};
+			azimut=-396.874878;
+			id=1;
+			side="EMPTY";
+			vehicle="Jawa";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item1
+		{
+			position[]={10688.833008,46.741459,1726.763916};
+			id=3;
+			side="EMPTY";
+			vehicle="Kolo";
+			leader=1;
+			skill=0.600000;
+		};
+		class Item2
+		{
+			position[]={10730.422852,127.979996,3113.827393};
+			id=5;
+			side="EMPTY";
+			vehicle="Kolo";
+			leader=1;
+			skill=0.600000;
+		};
+	};
+	class Markers
+	{
+		items=3;
+		class Item0
+		{
+			position[]={11175.479492,116.894325,5363.735352};
+			name="Coworking";
+			text="Coworking resort";
+			type="Flag";
+		};
+		class Item1
+		{
+			position[]={10647.037109,44.999996,1641.587891};
+			name="Ninja";
+			text="Ninja's Townhouse";
+			type="Flag";
+		};
+		class Item2
+		{
+			position[]={10724.543945,127.979996,3114.135010};
+			name="komarplace";
+			text="komar.in's location";
+			type="Flag";
+		};
+	};
+	class Sensors
+	{
+		items=5;
+		class Item0
+		{
+			position[]={10650.646484,44.968010,1638.338379};
+			a=10.000000;
+			b=10.000000;
+			angle=-11.731800;
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=0;
+			name="motorcycle";
+			class Effects
+			{
+				track="Track1";
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Privet, ninja, day bayk pogonyat";
+			};
+		};
+		class Item1
+		{
+			position[]={10648.369141,44.999996,1636.942261};
+			a=10.000000;
+			b=10.000000;
+			activationBy="VEHICLE";
+			timeoutMin=10.000000;
+			timeoutMid=10.000000;
+			timeoutMax=10.000000;
+			age="UNKNOWN";
+			idVehicle=0;
+			name="motorcycle_1";
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Da ne vopros, vo dvore stoeet";
+			};
+		};
+		class Item2
+		{
+			position[]={10727.481445,127.979996,3112.739014};
+			a=10.000000;
+			b=10.000000;
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=4;
+			name="priehali";
+			expCond="ovsyanov_zdes";
+			class Effects
+			{
+				track="Track7";
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Preved, komar, poehali v coworking";
+			};
+		};
+		class Item3
+		{
+			position[]={10726.168945,127.979996,3110.778076};
+			a=10.000000;
+			b=10.000000;
+			activationBy="MEMBER";
+			age="UNKNOWN";
+			idVehicle=0;
+			name="abstract_1";
+			expActiv="ovsyanov_zdes = true";
+			class Effects
+			{
+				titleType="TEXT";
+				title="www";
+			};
+		};
+		class Item4
+		{
+			position[]={11183.490234,116.917213,5364.405273};
+			timeoutMin=20.000000;
+			timeoutMid=20.000000;
+			timeoutMax=20.000000;
+			type="END1";
+			age="UNKNOWN";
+			expCond="endride";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"bis_resistance",
+		"Kolo"
+	};
+	addOnsAuto[]=
+	{
+		"bis_resistance",
+		"Kolo"
+	};
+	randomSeed=7191555;
+	class Intel
+	{
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10687.077148,46.656521,1727.410889};
+					azimut=100.738457;
+					id=0;
+					side="CIV";
+					vehicle="Civilian4";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=1.000000;
+					text="ovsyanov";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={10688.962891,46.754055,1727.129395};
+			azimut=-2.553610;
+			id=1;
+			side="EMPTY";
+			vehicle="Kolo";
+			leader=1;
+			skill=1.000000;
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={10690.605469,46.838974,1726.882202};
+			activationBy="MEMBER";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				cameraEffect="AroundSlow";
+				track="Track1";
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Kakoy chudesniy den dlya progoolkee. Zhal, chto priwlos' speezdit' skladnique u Haritona. Ili vzyat u ninji moped?";
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"bis_resistance"
+	};
+	addOnsAuto[]=
+	{
+		"bis_resistance"
+	};
+	randomSeed=15406595;
+	class Intel
+	{
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={11163.177734,116.877144,5363.474121};
+					azimut=-2.553610;
+					id=0;
+					side="CIV";
+					vehicle="Civilian4";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=1.000000;
+				};
+				class Item1
+				{
+					position[]={11167.263672,116.878273,5363.365234};
+					azimut=-2.553610;
+					id=1;
+					side="CIV";
+					vehicle="Civilian5";
+					skill=1.000000;
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={11165.081055,116.918427,5365.165039};
+			a=10.000000;
+			b=10.000000;
+			activationBy="CIV";
+			age="UNKNOWN";
+			class Effects
+			{
+				cameraEffect="AroundSlow";
+				cameraPosition="FRONT";
+				track="Track3";
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Vperedee zhdet celiy den' prodooktivnogo davleniya prywey i ebli OVerbluda";
+			};
+		};
+	};
+};
+class OutroLoose
+{
+	randomSeed=7659523;
+	class Intel
+	{
+	};
+};
